@@ -1,0 +1,9 @@
+<mat-tab-group dynamicHeight (selectedTabChange)="selectionChange($event)" [selectedIndex]="currentTabIndex">
+    <mat-tab
+      *ngFor="let tab of tabs; trackBy:trackByFunction"
+      label="{{tab.tabName}}"
+      >
+      <h4>{{tab.title}}</h4>
+      <app-table-number [userCount]="tab.listCount" [showFilter]="tab.showFilter"></app-table-number>
+    </mat-tab>
+  </mat-tab-group>
