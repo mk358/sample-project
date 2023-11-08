@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, Input } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { AppService } from 'src/app/app.service';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-table-number',
